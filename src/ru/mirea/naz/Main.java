@@ -6,7 +6,7 @@ public class Main implements Function {
 
     public static void main(String[] args) {
         Main del=new Main();
-        int x=234,y=2354;
+        int x=12,y=6;
         int[] z={x,y};
         System.out.println(del.apply(z));
     }
