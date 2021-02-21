@@ -1,4 +1,4 @@
-package ru.mirea.naz;
+package ru.mirea.naz.pr1;
 
 import java.util.function.Function;
 
