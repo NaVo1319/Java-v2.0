@@ -1,29 +1,33 @@
 package ru.mirea.naz.pr4;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 
 public class Main {
     public static void main(String[] args) {
-        CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> "Hello");
-        CompletableFuture<String> anotherFuture = future.thenApply((s) -> {
+        ExecutorService service=Executors.newFixedThreadPool(2);
+        service.submit(()->{
             try {
-                Thread.sleep(2000);
+                Thread.sleep(600);
+                System.out.println("Три");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            return s + " world";
         });
-        try {
-            System.out.println(anotherFuture.get(3, TimeUnit.SECONDS));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        } catch (TimeoutException e) {
-            e.printStackTrace();
-        }
+        service.submit(()->{
+            try {
+                Thread.sleep(400);
+                System.out.println("Два");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        service.submit(()->{
+            try {
+                Thread.sleep(200);
+                System.out.println("Один");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
