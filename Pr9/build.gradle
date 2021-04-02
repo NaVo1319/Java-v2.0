@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'main.java.Main'
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+dependencies {
+
+}
+jar {
+    baseName = 'Pr_9'
+    version =  '0.1'
+    manifest {
+        attributes(
+                'Main-Class': 'main.java.Main'
+        )
+    }
+}
