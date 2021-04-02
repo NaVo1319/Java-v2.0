@@ -1,0 +1,37 @@
+apply plugin: 'java'
+
+group 'ru.mirea'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.mirea.Main'
+    }
+    finalizedBy{
+        copyJar
+    }
+
+}
+task copyJar(type: Copy){
+    from jar
+    into ('dockerBuild')
+    finalizedBy{
+        createDocker
+    }
+}
+
+task createDocker(type: Exec){
+    workingDir 'dockerBuild'
+    commandLine "docker", "build", "-t", "pr9:1.0", "."
+    finalizedBy{
+        runDocker
+    }
+}
+
+task runDocker(type: Exec){
+    commandLine "docker", "run", "pr9:1.0"
+}
