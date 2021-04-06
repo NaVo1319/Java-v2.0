@@ -1,0 +1,150 @@
+
+
+#sign-reg{
+    margin-top: 50px;
+    margin-right: 10%;
+    align-items: flex-end;
+}
+
+#sign-reg > *{
+     color: #000; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  padding: 25px 40px; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+
+@media(max-width:346px){
+    #sign-reg > *{
+        padding: 15px 25px;
+    }
+}
+
+#sing{
+    background-color: white;
+}
+#reg{
+    background-color: green;
+}
+
+.menu-item > a{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.menu-item:hover{
+    background-color: red;
+}
+
+.menu-item a{
+    color:white;
+}
+
+
+#first-nav{
+    border-left: solid;
+    border-width: 1px;
+}
+
+#second-nav{
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+}
+
+#third-nav{
+    border-right: solid;
+    border-right:solid;
+    border-width: 1px;
+}
+
+#anga{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.search{
+    margin-top:20px;
+}
+
+
+
+.main-field{
+    margin-top: 20px;
+    
+}
+
+
+
+#main-window{
+    width: 95%;
+    height: 600px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#log-title{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+
+#email{
+    margin-top:30px;
+    margin-left: 10%;
+}
+#password{
+    margin-top:30px;
+    margin-left: 10%;
+}
+#password-repeat{
+    margin-top:30px;
+    margin-left:10%;
+}
+
+input{
+    width: 300px;
+}
+
+#log-button{
+    margin:100px 25%;
+    color: #000; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(12, 194, 6);
+    background-image: url(Source/girl.png);
+    background-size: contain;
+    height: 200px;
+    width: 195px; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    display: flex;
+}
+#log-button > span{
+    align-self: flex-start;
+    margin-left: 90px;
+    font-size: 30px;
+}
+
+@media(max-width:576px){
+    #main-window{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media(max-width:1200px){
+#main-window{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 700px
+}
+
+}

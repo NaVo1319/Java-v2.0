@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UtF-8">
+        <title>IVManga</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css">
+        <style>
+          #top-picture{
+              height: 200px; 
+              border-width: 1px; 
+              background-image: url(Source/maxresdefault_live.jpg);
+              background-repeat: repeat-x; 
+              background-size: auto 200px;
+          }
+        </style>
+    </head>
+    <body>
+          <div class="container-fluid" id = "top-picture">
+            <div class = "row justify-content-end">
+              <div id = "sign-reg">
+                <!--Внес изменения в представления кнопок-->
+                <a class="btn btn-light" href="login.html" role="button">Вход</a>
+                <a class="btn btn-success" href="registration.html" role="button">Регистрация</a>
+              </div>
+            </div>
+          </div>
+           <nav class="navbar navbar-expand-md navbar-expand-sm bg-danger " style=" height: 100px; white-space: nowrap;">
+            <a class = "navbar-brand" href="index.html" style="height: 50px; margin-top: -50px;">
+              <img src="Source/M.png" alt="Logo" style="height: 90px;"><span id="anga">anga</span>
+            </a>   
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+           <div class = "collapse navbar-collapse justify-content-end" style="margin-right: 5%;" id="collapsibleNadvbar">
+              <ul class="navbar-nav">
+                <li class="nav-item menu-item" id="first-nav">
+                  <a class="nav-link" href="Catalog.html">Каталог</a>
+                </li>
+                <li class="nav-item menu-item" id="second-nav">
+                  <a class="nav-link" href="Profile.html">Профиль</a>
+                </li>
+                <li class="nav-item menu-item" id="third-nav">
+                  <a class="nav-link" href="Info.html">О нас</a>
+                </li>
+              </ul>
+            </div> 
+          </nav>
+        <div class="row">
+          
+        </div>
+        <div class="container-fluid main-field">
+            <div class="row justify-content-center">
+              <div class="col-sm-6  col-xl-6 order-lg-first order-sm-first order-xl-first order-last">
+                  <div id = "catalog">
+  
+                  </div>
+              </div>
+            </div>
+        </body>
+</html>

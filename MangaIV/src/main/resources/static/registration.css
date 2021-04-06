@@ -1,0 +1,170 @@
+
+
+#sign-reg{
+    margin-top: 50px;
+    margin-right: 10%;
+    align-items: flex-end;
+}
+
+#sign-reg > *{
+     color: #000; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  padding: 25px 40px; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+
+@media(max-width:346px){
+    #sign-reg > *{
+        padding: 15px 25px;
+    }
+}
+
+#sing{
+    background-color: white;
+}
+#reg{
+    background-color: green;
+}
+
+.menu-item > a{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.menu-item:hover{
+    background-color: red;
+}
+
+.menu-item a{
+    color:white;
+}
+
+
+#first-nav{
+    border-left: solid;
+    border-width: 1px;
+}
+
+#second-nav{
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+}
+
+#third-nav{
+    border-right: solid;
+    border-right:solid;
+    border-width: 1px;
+}
+
+#anga{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.search{
+    margin-top:20px;
+}
+
+
+
+.main-field{
+    margin-top: 20px;
+    
+}
+
+
+
+#main-window{
+    width: 95%;
+    height: 600px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#reg-title{
+    font-size: 30px;
+}
+#set-avatar{
+    text-align: center;
+    margin-left: 20%; 
+    width: 150px;
+}
+#avatar{
+    
+    width: 150px;
+    height: 200px;
+    border: solid black;
+    border-width: 1px;
+}
+
+#avatar-button{   
+    margin-top: 2%;
+    color: #000; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(12, 194, 6); /* фон кнопки */
+    padding: 5px 10px; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+}
+
+#nickname{
+     margin-left: 10%; 
+    margin-top: 34px;
+    width: 200px;
+}
+
+#name{
+    margin-top:40px;
+}
+
+#last-name{
+    margin-top:20px;
+}
+#email{
+    margin-top:20px;
+}
+#password{
+    margin-top:20px;
+}
+#password-repeat{
+    margin-top:20px;
+}
+
+input{
+    width: 300px;
+}
+
+#reg-button{
+    margin:2% 35%;
+    
+    color: #000; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(12, 194, 6); /* фон кнопки */
+    padding: 20px 20px; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+}
+
+@media(max-width:576px){
+    #main-window{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media(max-width:1200px){
+#main-window{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+}
